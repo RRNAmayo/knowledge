@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/common.css" rel="stylesheet">
+		<title>笔记整理</title>
+	</head>
+	<body>
+		<nav id="top_nav" class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		    	<a class="navbar-brand" href="#">
+		        <img alt="CMJ" src="img/CMJ_20.png">
+		        <!-- <span>知识结构整理</span> -->
+		      </a>
+		      <a class="navbar-brand" href="#">
+		        <span>笔记整理</span>
+		      </a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">计算机网络</a></li>
+		        <li><a href="#">数据结构</a></li>
+		        <li><a href="#">操作系统</a></li>
+		        <li><a href="#">数据库</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">web前端 <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">HTML</a></li>
+		            <li><a href="#">CSS</a></li>
+		            <li><a href="#">JavaScript</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">highcharts</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">codeignitor</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html" >个人简历</a></li>
+		        <li><a href="#">绘画作品</a></li>
+		        <li><a href="#">与我联系</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<aside id="aside">
+			<div class="list-group">
+			  <a href="#" class="list-group-item">OSI，TCP/IP协议的体系结构</a>
+			  <a href="#" class="list-group-item">IP地址的分类</a>
+			  <a href="#" class="list-group-item">ARP和RARP协议</a>
+			  <a href="#" class="list-group-item">TCP三次握手和四次挥手</a>
+			  <a href="#" class="list-group-item">输入网址后的执行过程</a>
+			  <a href="#" class="list-group-item">TCP和UDP的区别</a>
+			  <a href="#" class="list-group-item">	交换机、路由器、网关的概念</a>
+			</div>
+		</aside>
+		<article id="article">
+			<h1>IP地址的分类</h1>
+			<section>
+				IP地址构成：网络号 + 主机号
+
+ 
+
+				A类地址：网络地址(1Byte) + 主机地址(3Byte)，且网络地址的首位必须是0；则网络地址的取值范围是0~~127,
+				
+				　　　　  而0是保留的并且表示所有IP地址，而127也是保留的地址，并且是用于测试环回用的。因此A类地址的范围其实是从1-126之间。
+				
+				　　　　  可用的A类网络有126个，每个网络能容纳1亿多个主机(2的24次方减1的主机数目)。
+				
+				　　　　  子网掩码：255.0.0.0.
+				
+				A类IP范围：首位为0；1.0.0.1~~126.255.255.254；主机号24位
+				
+				 
+				
+				B类地址：网络地址(2Byte) + 主机地址(2Byte)，且网络地址的前两位是10；则网络地址的取值范围是128~~191,
+				
+				　　　　  可用的B类网络有2的14方个，每个网络能容纳6万多个主机 (2的16次方减0和广播地址)。
+				
+				　　　　  子网掩码：255.255.0.0
+				
+				B类IP范围：前两位为10 ；128.0.0.1~~191.255.255.254；主机号16位
+				
+				 
+				
+				C类地址：网络地址(3Byte) + 主机地址(1Byte)，且网络地址的前三位是110；则网络地址的取值范围是192~~223,
+				
+				　　　　  可用的C类网络有2的21次方，可达209万余个，每个网络能容纳254个主机。
+				
+				　　　　  子网掩码：255.255.255.0
+				
+				C类IP范围：前三位为110；192.0.0.1~~223.255.255.254；主机号8位
+				
+				 
+				
+				D类地址：此类地址称为多播地址，也叫做组播地址，前四位必须是1110；网络地址的取值范围是224~~239,
+				
+				D类IP范围：前四位为1110；224.0.0.1~~239.255.255.254
+				
+				 
+				
+				E类地址：此类地址是保留地址，留作将来使用，前五位必须是11110；网络地址的取值范围是240~~254,
+				
+				E类IP范围：前五位为11110；240.0.0.1~~254.255.255.254
+				
+				 
+				
+				在这么多网络IP中，国际规定有一部分IP地址是用于我们的局域网使用，也就是属于私网IP，不在公网中使用的，他们的范围是： 　　
+				
+				10.0.0.0～10.255.255.255
+				
+				172.16.0.0～172.31.255.255　
+				
+				192.168.0.0～192.168.255.255
+			</section>
+		</article>
+		<script src="js/jquery-1.11.2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
