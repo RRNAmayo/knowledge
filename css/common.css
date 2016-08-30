@@ -1,0 +1,30 @@
+html{
+    height:100%;
+    margin:0;
+}
+body{
+	margin:0;
+	background-color:#EDEDEF;
+	height:100%
+}
+#top_nav{
+	margin:0;
+	width: 100%;
+	position:fixed;
+}
+#aside{
+	/*min-width:200px;*/
+	width:15%;
+	float: left;
+	height:100%;
+	background-color:white;
+	padding:80px 20px;
+	box-shadow: 5px 5px 5px #ccc;
+	z-index: 9;
+}
+#article{
+	float:right;
+	width:83%;
+	padding:80px 20px;
+	height: 800px;
+}
