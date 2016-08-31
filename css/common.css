@@ -27,7 +27,7 @@ body{
 #article{
 	float:right;
 	width:80%;
-	padding:80px 20px;
+	padding:80px 50px;
 	height: 800px;
 }
 #contents{
@@ -35,4 +35,12 @@ body{
 }
 section{
 	margin:50px 0;
+}
+pre{
+	border:0;
+	padding:50px 100px;
+	background-color:#f8f8f8;
+	box-shadow: 2px 2px 2px #ccc;
+	line-height:35px;
+	font-size:14px;
 }
