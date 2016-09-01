@@ -16,14 +16,26 @@
 }
 #education{
 	width:80%;
+	height:180px;
 }
 #photo{
 	float:right;
-	width:9%;
+	height:180px;
 	vertical-align: bottom;
 }
+#skill{
+	width:47%;
+	float: left;
+}
+#honors{
+	width:47%;
+	float:right;
+}
+#hobbies{
+	clear:both;
+}
 tr{
-	line-height:300%;
+	line-height:250%;
 }
 .title{
 	width:10%;
@@ -32,7 +44,9 @@ tr{
 }
 .panel{
 	font-size:18px;
+	
 }
 .panel-body{
-	padding:20px 50px;
+	padding:20px 40px;
+	line-height:250%;
 }
