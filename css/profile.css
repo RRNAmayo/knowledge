@@ -19,8 +19,20 @@
 }
 #photo{
 	float:right;
-	width:10%;
+	width:9%;
+	vertical-align: bottom;
 }
 tr{
-	line-height:200%;
+	line-height:300%;
+}
+.title{
+	width:10%;
+	font-weight:bold;
+	vertical-align:top;
+}
+.panel{
+	font-size:18px;
+}
+.panel-body{
+	padding:20px 50px;
 }
