@@ -1,0 +1,11 @@
+#article{
+	padding:80px 80px;
+}
+.thumbnail{
+	box-shadow: 3px 3px 3px #ccc;
+}
+.img{
+	width:100%;  
+    position:relative;  
+    display: inline-block; 
+}
